@@ -1,0 +1,22 @@
+{
+  "name": "weeksixprojectstattracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "fetch": "^1.1.0",
+    "mongoose": "^4.11.1",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.5",
+    "pg": "^6.4.0"
+  }
+}
