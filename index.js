@@ -22,12 +22,27 @@ app.use('/api', activities);
 app.get('/', function (req, res, next) {
   const user = new User({
     name: 'Jim',
-    password: 'apples'
-  });
+    password: 'apples',
+    activities: ['situps', 'pushups'],
+
+    });
+
   user.activities.push('workout');
   res.json(user.toObject());
 });
 
+function login (name, pword) {
+    (name && pword === true), res.send('./views/index.mustache');
+  }
+
+app.post('/', function (req, res, next) {
+  const name = req.body.name;
+  const pword = req.body.pword;
+  const activity = req.body.activity;
+
+});
+
+
 app.listen(3000, function (){
-  console.log('Connection');
+  console.log(login());
 });
